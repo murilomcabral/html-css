@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mídias em HTML5</title>
+</head>
+<body>
+   <h1>Imagem dinâmica</h1>
+   <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+   <picture>
+      <source media="(max-width: 430px)" srcset="imagens/foto-p.png" type="image/png">
+      <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+      <img src="imagens/foto-g.png" alt="foto-g">
+   </picture>
+
+   <h1>Reproduzindo Áudio</h1>
+   <p>Vou aprender a reproduzir áudios em HTML</p>
+   <audio src="midia/Smokey's Lounge - TrackTribe.mp3" controls></audio>
+   <!--MP3 WAV OGG-->
+   <audio preload="metadata" controls loop>
+      <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+      <p><a href="midia/guanacast-33.mp3">Infelizmente seu navegador não consegue reproduzir audio. </a></p>
+   </audio>
+   <p><a href="midia/guanacast-33.mp3" download="guanacast-33">Infelizmente seu navegador não consegue reproduzir audio. </a></p>
+
+</body>
+</html>

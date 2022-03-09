@@ -1,0 +1,55 @@
+@charset "UTF-8"
+
+/*
+   HTML    x  CSS
+   id      =   # (só pode 1 elemento por elemento html, 1 por página)
+   class   =   . (pode ter vários no mesmo elemento html e em outros elementos)
+*/
+
+body {
+   background-color: aliceblue;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+   color: darkblue;
+   font-size: 2em;
+}
+
+h1#principal {
+   text-align: center;
+   background-color: beige;
+   color: goldenrod;
+}
+
+h2 {
+   color: tomato;
+   font-size: 1.5em;
+}
+
+.basico {
+   color: #cbf1f4;
+}
+
+.intermediario {
+   color: #f3efca;
+}
+
+.avancado {
+   color: #f5ded3;
+}
+
+p {
+   font-size: 1em;
+   text-align: justify;
+}
+
+p::first-letter {
+   font-size: 1.5em;
+}
+
+.destaque {
+   background-color: #54a0d370;
+   border-radius: 7px;
+   padding-left: 10px;
+}
