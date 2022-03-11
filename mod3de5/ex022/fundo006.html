@@ -9,20 +9,36 @@
 
       body {
          height: 100vh;
+         background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+         background-size: cover;
+
+         /*
          background-color: black;
          background-image: url('imagens/wallpaper002.jpg');
-         background-position: center top;
+         background-position: center center;
          background-repeat: no-repeat;
          background-size: cover;
+         background-attachment: fixed;
+         */
       }
+
+      /* Shorthand - background
+         color > image > position > repeat > [size] > attachment
+
+         Até o momento, a propriedade de 'size' em shorthand não tem o efeito desejado e por isso precisa ser declarada fora do background shorthand
+      */
 
       main {
          background-color: white;
-         width: 400px;
+         max-width: 600px;
          padding: 10px;
          margin: auto;
          border: 1px solid darkblue;
          border-radius: 15px;
+      }
+
+      p {
+         text-align: justify;
       }
 
    </style>
@@ -30,7 +46,11 @@
 <body>
    <main>
       <h1>Teste de Imagem de Fundo</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim facere possimus culpa cupiditate ad corrupti sint? Incidunt, reprehenderit. Nihil temporibus aliquam vero similique sit harum omnis deserunt consequuntur placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque rem, pariatur minima odio deleniti ad non veritatis amet ullam quas, error explicabo saepe animi. Hic neque odit ipsa enim? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa alias minima magnam laborum vel eligendi delectus veritatis, explicabo quis! Labore quia, sunt totam illo distinctio sequi eveniet quibusdam est error.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim facere possimus culpa cupiditate ad corrupti sint? Incidunt, reprehenderit. Nihil temporibus aliquam vero similique sit harum omnis deserunt consequuntur placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque rem, pariatur minima odio deleniti ad non veritatis amet ullam quas, error explicabo saepe animi. Hic neque odit ipsa enim? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa alias minima magnam laborum vel eligendi delectus veritatis, explicabo quis! Labore quia, sunt totam illo distinctio sequi eveniet quibusdam est error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis explicabo facilis magni tempore, beatae quae consectetur architecto molestias doloremque minima, nisi saepe ullam. Assumenda facere aperiam sequi. Omnis, corrupti ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero delectus fuga repellendus quidem enim obcaecati in temporibus ad architecto! Facere earum, voluptatum rerum qui enim eius consequuntur ducimus assumenda quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor quae, quis adipisci mollitia inventore debitis quam reprehenderit modi. Animi dolorum nihil dolores, consequatur est nobis quis accusantium placeat eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolor quidem esse. Ducimus odit fugiat harum ipsa quaerat soluta accusamus, voluptatem ea quisquam iusto reprehenderit, impedit nihil cum dolor! Laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex quae animi, delectus quos sunt quidem esse nesciunt repellat et quibusdam. Incidunt laborum voluptates neque obcaecati eveniet nesciunt officiis consectetur. Eum.
+      Quo, aliquid quaerat alias animi magni, porro error repellat recusandae blanditiis dicta dolores sit? Magni quia amet, fugit, totam, quo ad iure quis iste repellendus ex laboriosam? Eos, sint soluta?
+      Debitis ad doloribus quisquam quae aspernatur distinctio sunt voluptatum et mollitia. Ducimus facere recusandae voluptatibus et illo libero, a temporibus aperiam exercitationem quasi, assumenda repellat laudantium minima voluptate ad nobis.
+      Dolorem voluptates in excepturi, quis laudantium aliquid culpa quam quia cumque est tempore, mollitia blanditiis, cupiditate eligendi nam ipsam dolorum voluptas veritatis iste fugiat ea doloremque reprehenderit! Error, quas cum.
+      Reiciendis nesciunt mollitia, in, ad delectus aspernatur doloribus laborum voluptatibus quasi eum nemo natus a ipsa, iusto beatae inventore ducimus? Enim asperiores aspernatur laudantium, sapiente consectetur dignissimos a quasi facere.</p>
    </main>
 </body>
 </html>
