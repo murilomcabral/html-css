@@ -26,22 +26,14 @@
          font-size: 25px;
       }
 
-      th {
-         text-align: center;
-         vertical-align: middle;
-      }
-
       th, td {
+         text-align: left;
          border: 1px solid #000;
          padding: 7px;
       }
 
-      tbody:nth-child(even) td {
-         background-color: #aaa;
-      }
-
-      tr:nth-child(odd) td {
-         background-color: #ddd;
+      tbody tr:nth-child(even) td {
+         background-color: red;
       }
 
    </style>
@@ -96,12 +88,12 @@
             <td>Toy Story</td>
          </tr>
       </tbody>
-      <footer>
+      <tfoot>
          <tr>
             <th colspan="4" scope="row">Total</th>
             <td>1000</td>
          </tr>
-      </footer>
+      </tfoot>
    </table>
 </body>
 </html>
