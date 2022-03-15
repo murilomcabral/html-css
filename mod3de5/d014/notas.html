@@ -22,12 +22,6 @@
          margin: 20px;
       }
 
-      :is(thead, .media) {
-         background-color: #888;
-         color: white;
-         border: 2px solid black;
-      }
-
       table {
          border: 2px solid black;
          border-collapse: collapse;
@@ -36,6 +30,17 @@
       th, td {
          border: 1px solid black;
          padding: 10px;
+      }
+
+      :is(thead, .media) {
+         font-weight: bold;
+         color: white;
+         background-color: #888;
+         border: 2px solid black;
+      }
+
+      .media td {
+         text-align: right;
       }
 
    </style>
