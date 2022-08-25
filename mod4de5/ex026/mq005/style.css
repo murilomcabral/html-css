@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+:root {
+   --cor01: rgb(173, 0, 0);
+   --cor02: #fff;
+   --cor03: #111;
+}
+
 * {
    margin: 0px;
    padding: 0px;
@@ -16,13 +22,12 @@ header > div {
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: #333;
+   background-color: var(--cor01);
    color: white;
 }
 
 ol#menu {
    display: none;
-   
    justify-content: space-between;
    list-style-type: none;
    list-style-position: inside;
@@ -31,8 +36,8 @@ ol#menu {
 li {
    padding: 5px;
    align-self: flex-end;
-   background-color: white;
-   color: black;
+   background-color: var(--cor01);
+   color: var(--cor02);
    border-radius: 5px;
    margin: 0px 5px;
    font-weight: bold;
@@ -46,16 +51,12 @@ span#menuIcon, span#menuIconClose:hover {
 
 ol li:hover {
    cursor: pointer;
-   background-color: brown;
-   color: white;
+   background-color: var(--cor02);
+   color: var(--cor01);
 }
 
 span#menuIcon {
    display: block;
-   animation-name: 'menuIco';
-   animation-duration: 3000ms;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
 }
 
 span#menuIconClose {
@@ -87,7 +88,7 @@ main p {
 
 footer {
    text-align: center;
-   background-color: black;
+   background-color: var(--cor03);
    padding: 5px;
-   color: white;
+   color: var(--cor02);
 }
