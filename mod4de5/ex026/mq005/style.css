@@ -45,23 +45,37 @@ li {
    font-variant-caps: all-small-caps;
 }
 
-span#menuIcon, span#menuIconClose:hover {
+span#menuOpen, span#menuClose:hover {
    cursor: pointer;
 }
 
 ol li:hover {
    cursor: pointer;
-   background-color: var(--cor02);
-   color: var(--cor01);
+   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+   animation-duration: 500ms;
+   animation-name: menuHover;
+   animation-direction: alternate-reverse;
+   animation-iteration-count: infinite;
 }
 
-span#menuIcon {
+@keyframes menuHover {
+   0% {
+      background-color: var(--cor01);
+      color: var(--cor02);
+   }
+   100% {
+      background-color: var(--cor02);
+      color: var(--cor01);
+   }
+}
+
+/* span#menuOpen {
    display: block;
 }
 
-span#menuIconClose {
+span#menuClose {
    display: none;
-}
+} */
 
 ol, span {
    margin: 5px 50px;

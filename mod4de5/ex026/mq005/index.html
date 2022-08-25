@@ -13,8 +13,8 @@
    <header>
       <div>
          <h1>Menu Hamburguinho</h1>
-         <span id="menuIcon" class="material-symbols-outlined" onclick="navMenu()" style="display: block;">menu</span>
-         <span id="menuIconClose" class="material-symbols-outlined" onclick="navMenu()" style="display: none;">close</span>
+         <span id="menuOpen" class="material-symbols-outlined" onclick="navMenu()" style="display: block;">menu</span>
+         <span id="menuClose" class="material-symbols-outlined" onclick="navMenu()" style="display: none;">close</span>
          <ol id="menu" style="display: none;">
             <li>Início</li>
             <li>Sobre</li>
@@ -45,12 +45,12 @@
       function navMenu () {
          if (menu.style.display == 'none') {
             menu.style.display = 'flex';
-            menuIconClose.style.display = 'block';
-            menuIcon.style.display = 'none';
+            menuOpen.style.display = 'none';
+            menuClose.style.display = 'block';
          } else {
             menu.style.display = 'none';
-            menuIconClose.style.display = 'none';
-            menuIcon.style.display = 'block';
+            menuOpen.style.display = 'block';
+            menuClose.style.display = 'none';
          }
       }
    </script>
