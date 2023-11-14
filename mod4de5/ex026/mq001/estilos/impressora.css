@@ -14,7 +14,7 @@ html {
 }
 
 menu {
-   display: none;
+   display: block;
 }
 
 article::after {
